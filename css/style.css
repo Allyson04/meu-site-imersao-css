@@ -1,0 +1,180 @@
+/*Normalize*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+  color: black;
+  text-decoration: none;
+}
+
+/*Mobile and Body*/
+
+body{
+  background: url(https://w.wallhaven.cc/full/p2/wallhaven-p26kk3.jpg) no-repeat center center fixed, #3c3f46;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 1em;
+}
+
+@media (min-width: 300px){
+  body{
+    font-size: 14px;
+  }
+ 
+}
+
+@media(min-width: 500px){
+
+  .portfolio .grid{
+  display: grid;
+  justify-content: space-around;
+}
+
+ .img-portfolio{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+
+/*Header of the Page*/
+
+  header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  position: fixed;
+  background: #F0FFFF;
+  width: 100vw;
+  top: 0px;
+}
+
+.menu a:link, 
+.menu a:visited,
+.portfolio a, 
+.contato h2{
+  color: /*white*/black;
+  opacity: 1.0;
+  font-size: 1.5em;
+  transition: background 0.5s, color 0.5s;
+  padding: 10px 10px;
+}
+
+.menu a:hover{
+  text-decoration: underline;
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.menu ul{
+  list-style-type: none;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-title,
+.site-subtitle{
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle{
+  font-size: 2em;
+}
+
+.site-title{
+  font-size: 3em;
+}
+
+/*Parte de Portfólio*/
+
+.contato,
+.portfolio{
+  background: #bfbfbf;
+  text-align: center;
+  align-content: space-around;
+  justify-content: center;
+  width: 100vw;
+  min-height: calc(100vh - 20px - 1.2em);
+}
+
+.portfolio h2,
+.contato h2{
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.portfolio .grid{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 260px 260px;
+}
+
+.img-portfolio{
+  width: 240px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px double whitesmoke;
+}
+
+.portfolio figure{
+  transition: transform 0.5s;
+}
+
+.portfolio figure:hover{
+transform: scale(1.2);
+}
+
+/*Contato*/
+
+#contato{
+  background:  #006666;
+}
+
+.contato a{
+  font-size: 5em;
+}
+
+.contato a:hover{
+  text-shadow: 0px 0px 10px whitesmoke;
+}
+
+.contato i{
+transform: scale(1.2);
+}
+
+.contato i:hover{
+transition: text-shadow 0.5s, transform 0.5s;
+}
+
+/*.contato a{
+  color:  #bfbfbf;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 2px;
+}
+
+.contato a:hover{
+  color:  #bfbfbf;
+  text-decoration: none;
+}
+
+.contato a:visited,
+.contato a:active{
+  color:  #bfbfbf;
+}*/
